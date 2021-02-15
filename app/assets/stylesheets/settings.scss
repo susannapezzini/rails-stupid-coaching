@@ -1,0 +1,23 @@
+// variables 
+
+$primary: #ffc0cb;
+$font-family: 'Courier Prime', monospace;
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: $font-family;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $primary;
+  opacity: 0.8; 
+}

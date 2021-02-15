@@ -1,0 +1,18 @@
+<div class="container">
+<div class="cloud">
+  <p><span>You:</span><br><%= params[:question]%></p>
+</div>
+<div class="cloud cloud-answer">
+  <p><span class="coach">Coach:</span> <br>
+    <%if params[:question] === 'I am going to work' %>
+    Great!
+    <% elsif params[:question].include? "?"%>
+    Silly question, get dressed and go to work!
+    <%else%>
+    I don't care, get dressed and go to work!
+    <%end%>
+  </p>
+</div>
+
+<div class="btn btn-ask"><%= link_to "New question", ask_path %></div>
+</div>
